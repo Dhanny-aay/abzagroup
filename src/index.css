@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ceoHero {
+  background-image: url(./images/ceo.svg);
+}
+.mobHero{
+  background-image: url(./images/mobHero.svg);
+}
+.succ {
+  background-image: url(./images/succ.svg);
+}
+.mobAbout{
+  background-image: url(./images/mobAbout.svg);
+}
+.bizone{
+  background-image: url(./images/bizone.svg);
+}
+.biztwo{
+  background-image: url(./images/biztwo.svg);
+}
+.bizthree{
+  background-image: url(./images/bizthree.svg);
+}
+.bizfour{
+  background-image: url(./images/bizfour.svg);
+}
+.bizfive{
+  background-image: url(./images/bizfive.svg);
+}
+.bizsix{
+  background-image: url(./images/bizsix.svg);
+}
+.bizseven{
+  background-image: url(./images/bizseven.svg);
+}
+.servi{
+  background-image: url(./images/servi.svg);
+}
