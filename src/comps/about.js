@@ -1,9 +1,15 @@
+import { motion } from 'framer-motion';
 import red from '../images/Angle-right-red.svg';
+
 
 const About = () => {
     return ( 
         <>
-        <div className=" mt-16 px-3 md:px-16">
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className=" mt-16 px-3 md:px-16">
             <div className=" flex flex-col md:flex-row items- justify-around">
                 <div className=" w-full md:w-[48%] relative space-y-3 md:space-y-0">
                     <p className=" font-Mulish text-2xl md:text-[32px] font-semibold">Your Partner for Success</p>
@@ -15,7 +21,7 @@ const About = () => {
                 </div>
                 <div className=" w-full mt-4 md:mt-0 md:w-[48%] h-[325px] md:h-[500px] rounded-[10px] mobAbout md:succ bg-cover"></div>
             </div>
-        </div>
+        </motion.div>
         </>
      );
 }

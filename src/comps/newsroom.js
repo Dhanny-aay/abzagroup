@@ -1,7 +1,12 @@
+import { motion } from 'framer-motion';
 const Newsroom = () => {
     return ( 
         <>
-        <div className=" my-16 md:px-16 px-3 flex flex-col justify-center items-center">
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className=" my-16 md:px-16 px-3 flex flex-col justify-center items-center">
             <p className=" font-Mulish text-[24px] md:text-[32px] text-center font-semibold">Newsroom</p>
             <p className=" font-Mulish text-[16px] font-normal md:text-lg text-center">Latest News and Insights from Azba Group</p>
             <div className=" w-full flex mt-8 flex-col space-y-3 md:space-y-0 md:flex-row items-center justify-around">
@@ -28,7 +33,7 @@ const Newsroom = () => {
                 </div>
             </div>
             <p className=" font-Mulish text-[16px] md:text-2xl text-[#9B090A] font-semibold mt-16">View More</p>
-        </div>
+        </motion.div>
         </>
      );
 }

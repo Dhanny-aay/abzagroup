@@ -1,11 +1,16 @@
 import call from '../images/call.svg';
 import loca from '../images/loca.svg';
 import mail from '../images/mail.svg';
+import { motion } from 'framer-motion';
 
 const Intouch = () => {
     return ( 
         <>
-        <div className=" w-full my-16 px-3 md:px-16">
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className=" w-full my-16 px-3 md:px-16">
             <div className=" w-full pb-[45px] border-b flex flex-col justify-center items-center">
                 <p className=" text-[24px] text-center md:text-[32px] font-Mulish font-semibold">Get in touch</p>
                 <p className=" font-Mulish text-center text-base md:text-lg font-normal mt-2">Our friendly team is always here to chat.</p>
@@ -30,7 +35,7 @@ const Intouch = () => {
                     <p className=' font-Mulish font-bold text-base mt-3'>+234 123 4567 890</p>
                 </span>
             </div>
-        </div>
+        </motion.div>
         </>
      );
 }

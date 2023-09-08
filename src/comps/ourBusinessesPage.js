@@ -26,12 +26,20 @@ const OurBusinessesPage = () => {
                 </span>
             </div>
         </div>
-        <div className="my-16 md:px-8 lg:px-16 px-3 flex flex-col justify-center items-center">
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className="my-16 md:px-8 lg:px-16 px-3 flex flex-col justify-center items-center">
             <p className=" font-Mulish text-[24px] md:text-[32px] text-center font-semibold">Our Businesses</p>
             <p className=" font-Mulish text-[16px] font-normal md:text-lg text-center">Our diversified portfolio of businesses allows us to leverage our strengths in different sectors and mitigate risks. Our company is committed to providing high-quality products and services to our customers and we constantly expanding our operations.</p>
-        </div>
+        </motion.div>
         <div className="md:mt-16 px-3 md:px-8 lg:px-16 space-y-16">
-            <div className=" flex flex-col-reverse lg:flex-row items- justify-around">
+            <motion.div
+            initial={{y:200, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{type:'tween', duration:0.5, delay:0.3}}
+            className=" flex flex-col-reverse lg:flex-row items- justify-around">
                 <div className=" w-full lg:w-[48%] relative space-y-3 mt-6 md:mt-0 md:space-y-4">
                     <p className=" font-Mulish text-2xl md:text-[32px] font-semibold">Azba Real Estate Ltd</p>
                     <p className=" font-Mulish text-base md:text-lg font-normal">Azba Group is a multi-sector conglomerate with interests in real estate, trading, farming, food manufacturing and processing, consulting and contracting, and various other businesses. The company was founded in 2001 and is headquartered in Lagos, Nigeria. Azba Group has a strong track record of success and has grown to become one of the leading conglomerates in Nigeria. The company is committed to providing high-quality products and services to its customers and is constantly expanding its operations.</p>
@@ -41,8 +49,12 @@ const OurBusinessesPage = () => {
                     </span>
                 </div>
                 <div className=" w-full mt-4 lg:mt-0 lg:w-[48%] h-[325px] md:h-[500px] rounded-[10px] bizone bg-cover"></div>
-            </div>
-            <div className=" flex flex-col-reverse lg:flex-row-reverse items- justify-around">
+            </motion.div>
+            <motion.div
+            initial={{y:200, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{type:'tween', duration:0.5, delay:0.3}}
+            className=" flex flex-col-reverse lg:flex-row-reverse items- justify-around">
                 <div className=" w-full lg:w-[48%] relative space-y-3 mt-6 lg:mt-0 md:space-y-4">
                     <p className=" font-Mulish text-2xl md:text-[32px] lg:text-right font-semibold">Azba Farms and Foods Ltd</p>
                     <p className=" font-Mulish text-base md:text-lg font-normal lg:text-right">Azba Group is a multi-sector conglomerate with a strong track record of providing high-quality services to its customers. The company's services are delivered by a team of experienced professionals who are committed to providing excellent customer service.</p>
@@ -52,8 +64,12 @@ const OurBusinessesPage = () => {
                     </span>
                 </div>
                 <div className=" w-full mt-4 md:mt-0 lg:w-[48%] h-[325px] md:h-[500px] rounded-[10px] bizertwo bg-cover"></div>
-            </div>
-            <div className=" flex flex-col-reverse lg:flex-row items- justify-around">
+            </motion.div>
+            <motion.div
+            initial={{y:200, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{type:'tween', duration:0.5, delay:0.3}}
+            className=" flex flex-col-reverse lg:flex-row items- justify-around">
                 <div className=" w-full lg:w-[48%] relative space-y-3 mt-6 lg:mt-0 md:space-y-4">
                     <p className=" font-Mulish text-2xl md:text-[32px] font-semibold">Azba Consulting Ltd</p>
                     <p className=" font-Mulish text-base md:text-lg font-normal">Azba Group is a multi-sector conglomerate with interests in real estate, trading, farming, food manufacturing and processing, consulting and contracting, and various other businesses. The company was founded in 2001 and is headquartered in Lagos, Nigeria. Azba Group has a strong track record of success and has grown to become one of the leading conglomerates in Nigeria. The company is committed to providing high-quality products and services to its customers and is constantly expanding its operations.</p>
@@ -63,8 +79,12 @@ const OurBusinessesPage = () => {
                     </span>
                 </div>
                 <div className=" w-full mt-4 md:mt-0 lg:w-[48%] h-[325px] md:h-[500px] rounded-[10px] bizthree bg-cover"></div>
-            </div>
-            <div className=" flex flex-col-reverse lg:flex-row-reverse items- justify-around">
+            </motion.div>
+            <motion.div
+            initial={{y:200, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{type:'tween', duration:0.5, delay:0.3}}
+            className=" flex flex-col-reverse lg:flex-row-reverse items- justify-around">
                 <div className=" w-full lg:w-[48%] mt-6 lg:mt-0 relative space-y-3 md:space-y-4">
                     <p className=" font-Mulish text-2xl md:text-[32px] lg:text-right font-semibold">Azba Energy Ltd</p>
                     <p className=" font-Mulish text-base md:text-lg font-normal lg:text-right">Azba Group is a multi-sector conglomerate with a strong track record of providing high-quality services to its customers. The company's services are delivered by a team of experienced professionals who are committed to providing excellent customer service.</p>
@@ -74,8 +94,12 @@ const OurBusinessesPage = () => {
                     </span>
                 </div>
                 <div className=" w-full mt-4 md:mt-0 lg:w-[48%] h-[325px] md:h-[500px] rounded-[10px] bizfour bg-cover"></div>
-            </div>
-            <div className=" flex flex-col-reverse lg:flex-row items- justify-around">
+            </motion.div>
+            <motion.div
+            initial={{y:200, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{type:'tween', duration:0.5, delay:0.3}}
+            className=" flex flex-col-reverse lg:flex-row items- justify-around">
                 <div className=" w-full lg:w-[48%] relative space-y-3 mt-6 lg:mt-0 md:space-y-4">
                     <p className=" font-Mulish text-2xl md:text-[32px] font-semibold">Azba Trading Ltd</p>
                     <p className=" font-Mulish text-base md:text-lg font-normal">Azba Group is a multi-sector conglomerate with interests in real estate, trading, farming, food manufacturing and processing, consulting and contracting, and various other businesses. The company was founded in 2001 and is headquartered in Lagos, Nigeria. Azba Group has a strong track record of success and has grown to become one of the leading conglomerates in Nigeria. The company is committed to providing high-quality products and services to its customers and is constantly expanding its operations.</p>
@@ -85,8 +109,12 @@ const OurBusinessesPage = () => {
                     </span>
                 </div>
                 <div className=" w-full mt-4 md:mt-0 lg:w-[48%] h-[325px] md:h-[500px] rounded-[10px] bizfive bg-cover"></div>
-            </div>
-            <div className=" flex flex-col-reverse lg:flex-row-reverse items- justify-around">
+            </motion.div>
+            <motion.div
+            initial={{y:200, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{type:'tween', duration:0.5, delay:0.3}}
+            className=" flex flex-col-reverse lg:flex-row-reverse items- justify-around">
                 <div className=" w-full lg:w-[48%] relative space-y-3 mt-6 lg:mt-0 md:space-y-4">
                     <p className=" font-Mulish text-2xl md:text-[32px] lg:text-right font-semibold">Azba Logistics</p>
                     <p className=" font-Mulish text-base md:text-lg font-normal lg:text-right">Azba Group is a multi-sector conglomerate with a strong track record of providing high-quality services to its customers. The company's services are delivered by a team of experienced professionals who are committed to providing excellent customer service.</p>
@@ -96,8 +124,12 @@ const OurBusinessesPage = () => {
                     </span>
                 </div>
                 <div className=" w-full mt-4 md:mt-0 lg:w-[48%] h-[325px] md:h-[500px] rounded-[10px] bizsix bg-cover"></div>
-            </div>
-            <div className=" flex flex-col-reverse lg:flex-row items- justify-around">
+            </motion.div>
+            <motion.div
+            initial={{y:200, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{type:'tween', duration:0.5, delay:0.3}}
+            className=" flex flex-col-reverse lg:flex-row items- justify-around">
                 <div className=" w-full lg:w-[48%] relative mt-6 lg:mt-0 space-y-3 md:space-y-4">
                     <p className=" font-Mulish text-2xl md:text-[32px] font-semibold">Azba Technology Ltd</p>
                     <p className=" font-Mulish text-base md:text-lg font-normal">Azba Group is a multi-sector conglomerate with interests in real estate, trading, farming, food manufacturing and processing, consulting and contracting, and various other businesses. The company was founded in 2001 and is headquartered in Lagos, Nigeria. Azba Group has a strong track record of success and has grown to become one of the leading conglomerates in Nigeria. The company is committed to providing high-quality products and services to its customers and is constantly expanding its operations.</p>
@@ -107,7 +139,7 @@ const OurBusinessesPage = () => {
                     </span>
                 </div>
                 <div className=" w-full mt-4 md:mt-0 lg:w-[48%] h-[325px] md:h-[500px] rounded-[10px] bizseven bg-cover"></div>
-            </div>
+            </motion.div>
         </div>
         <Footer/>
         </motion.div>

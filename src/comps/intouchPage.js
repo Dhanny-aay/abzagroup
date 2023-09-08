@@ -28,12 +28,20 @@ const IntouchPage = () => {
             </div>
         </div>   
 
-        <div className="mt-12 md:px-8 lg:px-16 px-3 ">
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className="mt-12 md:px-8 lg:px-16 px-3 ">
             <p className=" font-Mulish w-full text-[24px] md:text-[32px] text-center font-semibold">Introduction to Azba Group</p>
             <p className=" font-Mulish w-full text-[16px] md:text-[18px] text-center font-normal">We’d love to hear from you. Please fill out this form.</p>
-        </div>
+        </motion.div>
 
-        <div className=" my-8 w-full md:px-10 lg:px-20">
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className=" my-8 w-full md:px-10 lg:px-20">
             <div className=" w-full p-3 md:p-8 md:border rounded-[8px] border-[#DAE0E6]">
                 <div className=" w-full flex flex-col md:flex-row justify-between mb-6">
                     <span className=" w-full md:w-[48%]">
@@ -65,7 +73,7 @@ const IntouchPage = () => {
                     <p className=" font-Mulish text-base text-white">Send Message</p>
                 </button>
             </div>
-        </div>
+        </motion.div>
         <Intouch/>
         <Footer/>
         </motion.div>

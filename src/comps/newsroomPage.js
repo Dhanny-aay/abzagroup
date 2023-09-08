@@ -21,7 +21,11 @@ const NewsRoomPage = () => {
                 </span>
             </div>
         </div>
-        <div className=" my-8 md:px-16 px-3 flex flex-col justify-center items-center">
+        <motion.div 
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className=" my-8 md:px-16 px-3 flex flex-col justify-center items-center">
             <p className=" font-Mulish text-[24px] md:text-[32px] text-center font-semibold">Newsroom</p>
             <p className=" font-Mulish text-[16px] font-normal md:text-lg text-center">Latest News and Insights from Azba Group</p>
             <div className=" w-full flex mt-8 flex-col space-y-5 lg:space-y-0 lg:flex-row items-center justify-around">
@@ -93,7 +97,7 @@ const NewsRoomPage = () => {
                     <p className=" text-[#000000CC] font-Mulish font-normal mt-1 text-[14px] md:text-base">26 July 2021</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
         <Footer/>
         </motion.div>
      );

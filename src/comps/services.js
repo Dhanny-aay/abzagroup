@@ -1,8 +1,13 @@
 import red from '../images/Angle-right-red.svg';
+import { motion } from 'framer-motion';
 const Services = () => {
     return ( 
         <>
-        <div className="my-16 px-3 md:px-16">
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className="my-16 px-3 md:px-16">
             <div className=" flex flex-col-reverse md:flex-row items- justify-around">
                 <div className="w-full md:w-[48%] h-[325px] mt-3 md:mt-0 md:h-[500px] rounded-[10px] servi bg-cover"></div>
                 <div className=" w-full md:w-[48%] relative">
@@ -14,7 +19,7 @@ const Services = () => {
                     </span>
                 </div>
             </div>
-        </div>
+        </motion.div>
         </>
      );
 }

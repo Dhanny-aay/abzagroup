@@ -29,7 +29,11 @@ const CareerPage = () => {
             </div>
         </div>
         <p className=" my-6 font-Mulish w-full text-[24px] md:text-[32px] text-center font-semibold">Our Values</p>
-        <div className=" mt-16 px-3 md:px-16">
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className=" mt-16 px-3 md:px-16">
             <div className=" flex flex-col lg:flex-row items- justify-around">
                 <div className=" w-full lg:w-[48%] relative space-y-3 lg:space-y-0">
                     <div className="">
@@ -45,13 +49,17 @@ const CareerPage = () => {
                 </div>
                 <div className=" w-full mt-4 lg:mt-0 lg:w-[48%] h-[325px] md:h-[500px] rounded-[10px] mobAbout md:succ bg-cover"></div>
             </div>
-        </div>
+        </motion.div>
         <div className=" my-8 md:px-16 px-3 flex flex-col justify-center items-center">
             <p className=" font-Mulish text-[24px] md:text-[32px] text-center font-semibold">Vacancies</p>
             <p className=" font-Mulish lg:w-[700px] text-[16px] font-normal md:text-lg text-center">Want to work with some of the best global talent and build software used by all the companies you know and love? Join the team — we’re hiring!</p>
         </div>
 
-        <div className=" my-8 px-3 md:px-16">
+        <motion.div 
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{type:'tween', duration:0.5, delay:0.3}}
+        className=" my-8 px-3 md:px-16">
             {/* //Design */}
             <div className="border-y py-10">
                 <div className=" flex flex-col lg:flex-row items- justify-around">
@@ -148,7 +156,7 @@ const CareerPage = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
         <Footer/>
         </motion.div>
      );
