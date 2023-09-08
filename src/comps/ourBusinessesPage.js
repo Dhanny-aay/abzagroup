@@ -3,10 +3,16 @@ import Navbar from "./navbar";
 import angleright from '../images/Angle-right.svg';
 import mobright from '../images/mobright.svg';
 import red from '../images/Angle-right-red.svg';
+import { motion } from "framer-motion";
 
 const OurBusinessesPage = () => {
     return ( 
-        <>
+        <motion.div
+        initial={{x:100, opacity:0}}
+        animate={{x:0, opacity:1}}
+        exit={{x:-100, opacity:0}}
+        transition={{delay:0.3}}
+        >
         <Navbar/>
         <div className=" md:p-14 px-3  py-5 w-full h-[90vh]">
             <div className=" w-full h-[100%] bg-yellow-100 rounded-[30px] biztwo bg-cover relative">
@@ -104,7 +110,7 @@ const OurBusinessesPage = () => {
             </div>
         </div>
         <Footer/>
-        </>
+        </motion.div>
      );
 }
  

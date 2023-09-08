@@ -4,10 +4,17 @@ import angleright from '../images/Angle-right.svg';
 import mobright from '../images/mobright.svg';
 import time from '../images/time.svg';
 import dollar from '../images/dollar.svg';
+import { motion } from "framer-motion";
+
 
 const CareerPage = () => {
     return ( 
-        <>
+        <motion.div
+        initial={{x:100, opacity:0}}
+        animate={{x:0, opacity:1}}
+        exit={{x:-100, opacity:0}}
+        transition={{delay:0.3}}
+        >
         <Navbar/>
         <div className=" md:p-14 px-3  py-5 w-full h-[90vh]">
             <div className=" w-full h-[100%] bg-yellow-100 rounded-[30px] carHero bg-cover relative">
@@ -27,11 +34,11 @@ const CareerPage = () => {
                 <div className=" w-full lg:w-[48%] relative space-y-3 lg:space-y-0">
                     <div className="">
                         <p className=" font-Mulish text-base md:text-xl font-semibold">1. Our Coverage</p>
-                        <p className=" ml-5 font-Mulish text-sm md:text-base mb-5">Our services extends all over Nigeria and beyond. We have capability to process payments in Naira, Dollars and Pounds. Whatever currency or process you thinking, we’ve got you covered.</p>
+                        <p className=" ml-5 font-Mulish text-sm md:text-base mb-6 lg:mb-10">Our services extends all over Nigeria and beyond. We have capability to process payments in Naira, Dollars and Pounds. Whatever currency or process you thinking, we’ve got you covered.</p>
                         <p className=" font-Mulish text-base md:text-xl font-semibold">2. Our Culture</p>
-                        <p className=" ml-5 font-Mulish text-sm md:text-base mb-5">At Azba group, we make work fun, employing only the best hands who enjoy what they do beyond earning a pay. This is reflected in our superb customer service. </p>
+                        <p className=" ml-5 font-Mulish text-sm md:text-base mb-6 lg:mb-10">At Azba group, we make work fun, employing only the best hands who enjoy what they do beyond earning a pay. This is reflected in our superb customer service. </p>
                         <p className=" font-Mulish text-base md:text-xl font-semibold">3. AP operations</p>
-                        <p className=" ml-5 font-Mulish text-sm md:text-base mb-5" >We operate using the best and internationally recognized SOPs. This is particulalry obvious in our various certifcations by ISO, CBN, NDPB.</p>
+                        <p className=" ml-5 font-Mulish text-sm md:text-base mb-6 lg:mb-10" >We operate using the best and internationally recognized SOPs. This is particulalry obvious in our various certifcations by ISO, CBN, NDPB.</p>
                         <p className=" font-Mulish text-base md:text-xl font-semibold">4. Future of payments</p>
                         <p className=" ml-5 font-Mulish text-sm md:text-base">We are constantly seeking new breakthroughs and solutions to cater to problems business haven’t reported and ensuuring we make our newer products far easier and efficient than the last.</p>
                     </div>
@@ -143,7 +150,7 @@ const CareerPage = () => {
             </div>
         </div>
         <Footer/>
-        </>
+        </motion.div>
      );
 }
  

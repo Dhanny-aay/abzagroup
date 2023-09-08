@@ -2,10 +2,16 @@ import Footer from "./footer";
 import Navbar from "./navbar";
 import angleright from '../images/Angle-right.svg';
 import mobright from '../images/mobright.svg';
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
     return ( 
-        <>
+        <motion.div
+        initial={{x:100, opacity:0}}
+        animate={{x:0, opacity:1}}
+        exit={{x:-100, opacity:0}}
+        transition={{delay:0.3}}
+        >
         <Navbar/>
         <div className=" md:p-14 px-3  py-5 w-full h-[90vh]">
             <div className=" w-full h-[100%] bg-black rounded-[30px] ceoHero bg-cover relative">
@@ -53,7 +59,7 @@ const AboutPage = () => {
             </div>
         </div>
         <Footer/>
-        </>
+        </motion.div>
      );
 }
  

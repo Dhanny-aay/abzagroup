@@ -119,6 +119,8 @@ const Hero = () => {
             onTouchEnd={handleTouchEnd}
             style={{
                 background: `url(${currentBackgroundImageUrl})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
             }}
             animate={controls}
             transition={{stiffness:0}}

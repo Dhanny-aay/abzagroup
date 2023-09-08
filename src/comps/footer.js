@@ -3,6 +3,7 @@ import twi from '../images/twi.svg';
 import ig from '../images/ig.svg';
 import lnkd from '../images/lnkd.svg';
 import fb from '../images/fb.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return ( 
@@ -12,12 +13,12 @@ const Footer = () => {
                 <div className=" flex flex-col space-y-8 md:space-y-0 md:flex-row justify-around">
                     <div className=" flex flex-col ">
                         <span className=' space-y-3'>
-                        <p className=" text-white font-Mulish text-[18px] md:text-[20px] font-semibold">Company</p>
-                        <p className=" font-Mulish text-sm font-normal text-[#FFFFFFCC]">About us</p>
-                        <p className=" font-Mulish text-sm font-normal text-[#FFFFFFCC]">Our businesses</p>
-                        <p className=" font-Mulish text-sm font-normal text-[#FFFFFFCC]">Newsroom</p>
-                        <p className=" font-Mulish text-sm font-normal text-[#FFFFFFCC]">Career</p>
-                        <p className=" font-Mulish text-sm font-normal text-[#FFFFFFCC]">Contact</p>
+                        <p className=" text-white font-Mulish text-[18px] md:text-[20px] mb-2 font-semibold">Company</p>
+                        <Link to='/about'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">About us</p></Link>
+                        <Link to='/businesses'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Our businesses</p></Link>
+                        <Link to='/newsroom'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Newsroom</p></Link>
+                        <Link to='/careers'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Career</p></Link>
+                        <Link to='/contactus'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Contact</p></Link>
                         </span>
                         <div className='hidden md:block mt-[90px]'>
                             <p className=' font-Mulish text-xl font-semibold'>Follow AZBA group</p>
