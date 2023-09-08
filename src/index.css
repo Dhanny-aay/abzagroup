@@ -15,6 +15,13 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+
+.swipe-container-parent .swipe-container {
+  transition: background-image 0.5s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .ceoHero {
   background-image: url(./images/ceo.svg);
   background-size: cover;
