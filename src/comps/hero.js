@@ -93,8 +93,21 @@ const Hero = () => {
           controls.start({ x: '0%' }); // Reset position to initial
         }, 300); // Adjust the delay as needed to match the animation duration
       };
+
+    //   const handleNextClick = () => {
+    //     setCurrentIndex((prevIndex) =>
+    //       prevIndex === backgroundImageUrls.length - 1 ? 0 : prevIndex + 1
+    //     );
+    //   };
+    
+    //   const handlePrevClick = () => {
+    //     setCurrentIndex((prevIndex) =>
+    //       prevIndex === 0 ? backgroundImageUrls.length - 1 : prevIndex - 1
+    //     );
+    //   };
     
       const currentBackgroundImageUrl = backgroundImageUrls[currentIndex];
+      const currentImageText = Herotxt[currentIndex];
 ;
 
     return ( 
@@ -111,7 +124,7 @@ const Hero = () => {
             transition={{stiffness:0}}
             className=" w-full h-[100%] swipe-container bg-yellow-100 rounded-[30px] bg-cover relative">
                 <span className=" absolute bottom-8 left-4 md:bottom-[64px] md:left-[64px] space-y-4">
-                    <p className=" font-Mulish font-semibold text-[24px] md:text-[48px] text-[#fff]">A speech from our CEO</p>
+                    <p className=" font-Mulish font-semibold text-[24px] md:text-[48px] text-[#fff]">{currentImageText}</p>
                     <span className=" flex flex-row space-x-2 items-center">
                         <p className=" font-Mulish text-base md:text-2xl font-normal text-white">Find out more</p>
                         <img src={ angleright } className=' mt-1 hidden md:block' alt="" />
