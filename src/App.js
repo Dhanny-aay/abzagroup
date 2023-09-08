@@ -8,9 +8,9 @@ import OurBusinessesPage from "./comps/ourBusinessesPage";
 function App() {
   return (
     <>
-    {/* <Landing/> */}
+    <Landing/>
     {/* <NewsRoomPage/> */}
-    <CareerPage/>
+    {/* <CareerPage/> */}
     {/* <AboutPage/> */}
     {/* <OurBusinessesPage/> */}
     {/* <IntouchPage/> */}
