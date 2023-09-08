@@ -95,3 +95,19 @@ code {
   object-fit: cover;
   }
 }
+
+.carHero {
+  background-image: url(./images/careerHero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carHero {
+    background-image: url(./images/contHeroMob.svg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  }
+}

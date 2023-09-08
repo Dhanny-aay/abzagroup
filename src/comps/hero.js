@@ -6,7 +6,7 @@ const Hero = () => {
     return ( 
         <>
         <div className=" md:p-14 px-3  py-5 w-full h-[90vh]">
-            <div className=" w-full h-[100%] bg-black rounded-[30px] ceoHero bg-cover relative">
+            <div className=" w-full h-[100%] bg-yellow-100 rounded-[30px] ceoHero bg-cover relative">
                 <span className=" absolute bottom-8 left-4 md:bottom-[64px] md:left-[64px] space-y-4">
                     <p className=" font-Mulish font-semibold text-[24px] md:text-[48px] text-[#fff]">A speech from our CEO</p>
                     <span className=" flex flex-row space-x-2 items-center">
