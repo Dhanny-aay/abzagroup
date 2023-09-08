@@ -1,4 +1,5 @@
 import AboutPage from "./comps/aboutPage";
+import IntouchPage from "./comps/intouchPage";
 import Landing from "./comps/landing";
 import NewsRoomPage from "./comps/newsroomPage";
 import OurBusinessesPage from "./comps/ourBusinessesPage";
@@ -9,7 +10,8 @@ function App() {
     {/* <Landing/> */}
     {/* <NewsRoomPage/> */}
     {/* <AboutPage/> */}
-    <OurBusinessesPage/>
+    {/* <OurBusinessesPage/> */}
+    <IntouchPage/>
     </>
   );
 }

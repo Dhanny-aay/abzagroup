@@ -17,6 +17,18 @@ code {
 
 .ceoHero {
   background-image: url(./images/ceo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .ceoHero {
+    background-image: url(./images/mobHero.svg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  }
 }
 .mobHero{
   background-image: url(./images/mobHero.svg);
@@ -30,8 +42,24 @@ code {
 .bizone{
   background-image: url(./images/bizone.svg);
 }
-.biztwo{
+.bizertwo{
   background-image: url(./images/biztwo.svg);
+}
+
+.biztwo {
+  background-image: url(./images/bizhero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .biztwo {
+    background-image: url(./images/bizheromob.svg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  }
 }
 .bizthree{
   background-image: url(./images/bizthree.svg);
@@ -50,4 +78,20 @@ code {
 }
 .servi{
   background-image: url(./images/servi.svg);
+}
+
+.conHero {
+  background-image: url(./images/contHero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .conHero {
+    background-image: url(./images/contHeroMob.svg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  }
 }

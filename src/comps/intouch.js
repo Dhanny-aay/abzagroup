@@ -10,10 +10,10 @@ const Intouch = () => {
                 <p className=" text-[24px] text-center md:text-[32px] font-Mulish font-semibold">Get in touch</p>
                 <p className=" font-Mulish text-center text-base md:text-lg font-normal mt-2">Our friendly team is always here to chat.</p>
             </div>
-            <div className=' flex flex-col space-y-8 md:space-y-0 md:flex-row items-start justify-around mt-8'>
+            <div className=' flex flex-col space-y-8 lg:space-y-0 lg:flex-row items-start md:items-start lg:items-start justify-around mt-8'>
                 <span className=' flex flex-col items-start'>
                     <img src={ mail } className='' alt="" />
-                    <p className=' font-Mulish font-semibold text-lg md:text-xl mt-[12px]'>Email</p>
+                    <p className=' font-Mulish font-semibold text-lg md:text-xl mt-['>Email</p>
                     <p className=' font-Mulish font-normal text-base'>Our friendly team is here to help.</p>
                     <p className=' font-Mulish font-bold text-base mt-3'>info@azbagroup.com</p>
                 </span>

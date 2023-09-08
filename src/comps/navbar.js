@@ -5,7 +5,7 @@ import menu from '../images/menu.svg';
 const Navbar = () => {
     return ( 
         <>
-        <div className=" w-full px-3 md:px-24 py-5 flex flex-row justify-between items-center border-b border-[#D6D6D6]">
+        <div className=" w-full px-3 md:px-8 lg:px-24 py-5 flex flex-row justify-between items-center border-b border-[#D6D6D6]">
             <img src={ logo } alt="" />
             <span className=" hidden md:flex flex-row items-center space-x-16">
                 <p className=' font-Mulish text-base font-semibold text-[#06191F]'>About us</p>
