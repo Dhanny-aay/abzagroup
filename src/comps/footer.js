@@ -14,6 +14,7 @@ const Footer = () => {
                     <div className=" flex flex-col ">
                         <span className=' space-y-3'>
                         <p className=" text-white font-Mulish text-[18px] md:text-[20px] mb-2 font-semibold">Company</p>
+                        <Link to='/'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Home</p></Link>
                         <Link to='/about'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">About us</p></Link>
                         <Link to='/businesses'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Our businesses</p></Link>
                         <Link to='/newsroom'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Newsroom</p></Link>
