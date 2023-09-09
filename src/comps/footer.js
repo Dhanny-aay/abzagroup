@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return ( 
         <>
-        <div className="mt-16 md:px-16 px-3 py-6 w-full md:py-16 bg-[#9B090A] text-white">
+        <div className="mt-16 lg:px-16 md:px-8 px-3 py-6 w-full md:py-16 bg-[#9B090A] text-white">
             <div className=" w-full">
-                <div className=" flex flex-col space-y-8 md:space-y-0 md:flex-row justify-around">
+                <div className=" flex flex-col space-y-8 lg:space-y-0 lg:flex-row justify-around">
                     <div className=" flex flex-col ">
                         <span className=' space-y-3'>
                         <p className=" text-white font-Mulish text-[18px] md:text-[20px] mb-2 font-semibold">Company</p>
@@ -20,7 +20,7 @@ const Footer = () => {
                         <Link to='/careers'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Career</p></Link>
                         <Link to='/contactus'><p className=" font-Mulish text-sm font-normal mb-2 text-[#FFFFFFCC]">Contact</p></Link>
                         </span>
-                        <div className='hidden md:block mt-[90px]'>
+                        <div className='hidden lg:block mt-[90px]'>
                             <p className=' font-Mulish text-xl font-semibold'>Follow AZBA group</p>
                             <span className=' flex flex-row mt-3 space-x-3'>
                                 <button className=' w-[60px] flex justify-center items-center h-[60px] rounded-[50%] border-[3px] border-[#f0f9fc3f]'>
@@ -69,7 +69,7 @@ const Footer = () => {
                             <p className=" font-Mulish text-sm font-normal text-[#FFFFFF80]">26 July 2021</p>
                         </span>
                     </div>
-                    <div className='block md:hidden '>
+                    <div className='block lg:hidden '>
                             <p className=' font-Mulish text-xl font-semibold'>Follow AZBA group</p>
                             <span className=' flex flex-row mt-3 space-x-3'>
                                 <button className=' w-[60px] flex justify-center items-center h-[60px] rounded-[50%] border-[3px] border-[#f0f9fc3f]'>

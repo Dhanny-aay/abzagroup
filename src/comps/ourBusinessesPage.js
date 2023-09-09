@@ -41,7 +41,7 @@ const OurBusinessesPage = () => {
             transition={{type:'tween', duration:0.5, delay:0.3}}
             className=" flex flex-col-reverse lg:flex-row items- justify-around">
                 <div className=" w-full lg:w-[48%] relative space-y-3 mt-6 md:mt-0 md:space-y-4">
-                    <p className=" font-Mulish text-2xl md:text-[32px] font-semibold">Azba Real Estate Ltd</p>
+                    <p className=" font-Mulish text-2xl md:text-[32px] md:mt-3 lg:mt-0 font-semibold">Azba Real Estate Ltd</p>
                     <p className=" font-Mulish text-base md:text-lg font-normal">Azba Group is a multi-sector conglomerate with interests in real estate, trading, farming, food manufacturing and processing, consulting and contracting, and various other businesses. The company was founded in 2001 and is headquartered in Lagos, Nigeria. Azba Group has a strong track record of success and has grown to become one of the leading conglomerates in Nigeria. The company is committed to providing high-quality products and services to its customers and is constantly expanding its operations.</p>
                     <span className=" flex flex-row lg:absolute bottom-0 space-x-2"> 
                         <p className=" font-Mulish text-[#9B090A] font-semibold text-lg md:text-[24px]">Contact for Business</p>

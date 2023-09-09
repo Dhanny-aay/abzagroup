@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 const Newsroom = () => {
     return ( 
         <>
@@ -9,7 +10,7 @@ const Newsroom = () => {
         className=" my-16 md:px-16 px-3 flex flex-col justify-center items-center">
             <p className=" font-Mulish text-[24px] md:text-[32px] text-center font-semibold">Newsroom</p>
             <p className=" font-Mulish text-[16px] font-normal md:text-lg text-center">Latest News and Insights from Azba Group</p>
-            <div className=" w-full flex mt-8 flex-col space-y-3 md:space-y-0 md:flex-row items-center justify-around">
+            <div className=" w-full flex mt-8 flex-col space-y-3 lg:space-y-0 lg:flex-row items-center justify-around">
                 <div className=" flex flex-col w-full md:w-[350px]">
                     <span className=" w-full rounded-[10px] h-[300px] bg-[#06191F]">
 
@@ -32,7 +33,7 @@ const Newsroom = () => {
                     <p className=" text-[#000000CC] font-Mulish font-normal mt-1 text-[14px] md:text-base">26 July 2021</p>
                 </div>
             </div>
-            <p className=" font-Mulish text-[16px] md:text-2xl text-[#9B090A] font-semibold mt-16">View More</p>
+            <Link to='/newsroom'><p className=" font-Mulish text-[16px] md:text-2xl text-[#9B090A] font-semibold mt-16">View More</p></Link>
         </motion.div>
         </>
      );

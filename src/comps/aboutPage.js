@@ -37,12 +37,12 @@ const AboutPage = () => {
         </motion.div>
         <div className=" my-16 md:px-16 px-3 flex flex-col justify-center items-center">
             <p className=" font-Mulish text-[24px] md:text-[32px] text-center font-semibold">The Core of Our Team</p>
-            <p className=" font-Mulish md:w-[800px] text-[16px] font-normal md:text-lg text-center">Organically grow the holistic world view of disruptive innovation via workplace diversity  and empowerment of people and great talent that truly rocks.</p>
+            <p className=" font-Mulish lg:w-[800px] text-[16px] font-normal md:text-lg text-center">Organically grow the holistic world view of disruptive innovation via workplace diversity  and empowerment of people and great talent that truly rocks.</p>
             <motion.div
             initial={{y:200, opacity:0}}
             whileInView={{y:0, opacity:1}}
             transition={{type:'tween', duration:0.5, delay:0.3}}
-            className=" w-full flex mt-8 flex-col space-y-3 md:space-y-0 md:flex-row items-center justify-around">
+            className=" w-full flex mt-8 flex-col space-y-3 lg:space-y-0 lg:flex-row items-center justify-around">
                 <div className=" flex flex-col w-full md:w-[350px]">
                     <span className=" w-full rounded-[10px] h-[300px] bg-[#06191F]">
 

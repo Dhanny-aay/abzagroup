@@ -1,6 +1,9 @@
 import angleright from '../images/Angle-right.svg';
 import mobright from '../images/mobright.svg';
 import swipe from '../images/swipe.svg';
+import swipeone from '../images/swipeone.svg';
+import swipetwo from '../images/swipetwo.svg';
+import swipethree from '../images/swipethree.svg';
 import ceo from '../images/ceo.svg';
 import bizHero from '../images/bizhero.svg';
 import heroThree from '../images/heroThree.svg';
@@ -8,7 +11,8 @@ import heroFour from '../images/heroFour.svg';
 import mobHero from '../images/mobHero.svg';
 import bizheromob from '../images/bizheromob.svg'
 import { useState, useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { useAnimation } from 'framer-motion';
  
 const Hero = () => {
     // swipe function
@@ -28,6 +32,13 @@ const Hero = () => {
     const mobileBackgroundImageUrls = [
         mobHero,
         bizheromob,
+    ];
+
+    const swipeImageUrls = [
+        swipe,
+        swipeone,
+        swipetwo,
+        swipethree
     ];
 
     const isMobileScreen = window.innerWidth <= 768;
@@ -105,9 +116,23 @@ const Hero = () => {
     //       prevIndex === 0 ? backgroundImageUrls.length - 1 : prevIndex - 1
     //     );
     //   };
+
+    // Slideshow functionality
+    useEffect(() => {
+      const slideshowInterval = setInterval(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === backgroundImageUrls.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 5000);
+
+      return () => {
+        clearInterval(slideshowInterval);
+      };
+    }, [backgroundImageUrls]);
     
       const currentBackgroundImageUrl = backgroundImageUrls[currentIndex];
       const currentImageText = Herotxt[currentIndex];
+      const currentSwipeImage = swipeImageUrls[currentIndex];
 ;
 
     return ( 
@@ -124,17 +149,17 @@ const Hero = () => {
             }}
             animate={controls}
             transition={{stiffness:0}}
-            className=" w-full h-[100%] swipe-container bg-yellow-100 rounded-[30px] bg-cover relative">
+            className=" w-full h-[100%] swipe-container bg-[#06191F] rounded-[30px] bg-cover relative">
                 <span className=" absolute bottom-8 left-4 md:bottom-[64px] md:left-[64px] space-y-4">
                     <p className=" font-Mulish font-semibold text-[24px] md:text-[48px] text-[#fff]">{currentImageText}</p>
                     <span className=" flex flex-row space-x-2 items-center">
-                        <p className=" font-Mulish text-base md:text-2xl font-normal text-white">Find out more</p>
+                        <Link to='/about'><p className=" font-Mulish text-base md:text-2xl font-normal text-white">Find out more</p></Link>
                         <img src={ angleright } className=' mt-1 hidden md:block' alt="" />
                         <img src={ mobright } className=' block md:hidden mt-1' alt="" />
                     </span>
                 </span>
                 <span className=' absolute bottom-5 w-full hidden md:flex justify-center items-center'>
-                    <img src={ swipe } className='' alt="" />
+                    <img src={ currentSwipeImage } className='' alt="" />
                 </span>
             </div>
         </div>
