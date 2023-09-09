@@ -73,13 +73,13 @@ const Hero = () => {
     
           if (swipeDistance > 50) {
             // Swipe right
-            controls.start({ x:'-5%' }); // Animate to the left
+            controls.start({ x:'0%' }); // Animate to the left
             setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? backgroundImageUrls.length - 1 : prevIndex - 1
         );
           } else if (swipeDistance < -50) {
             // Swipe left
-            controls.start({ x:'5%' }); // Animate to the right
+            controls.start({ x:'0%' }); // Animate to the right
             setCurrentIndex((prevIndex) =>
             prevIndex === backgroundImageUrls.length - 1 ? 0 : prevIndex + 1
             );
@@ -113,12 +113,12 @@ const Hero = () => {
     return ( 
         <>
         <div className=" md:p-14 px-3  py-5 w-full h-[90vh] swipe-container-parent">
-            <motion.div
+            <div
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
             style={{
-                background: `url(${currentBackgroundImageUrl})`,
+                backgroundImage: `url(${currentBackgroundImageUrl})`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
             }}
@@ -136,7 +136,7 @@ const Hero = () => {
                 <span className=' absolute bottom-5 w-full hidden md:flex justify-center items-center'>
                     <img src={ swipe } className='' alt="" />
                 </span>
-            </motion.div>
+            </div>
         </div>
         </>
      );
