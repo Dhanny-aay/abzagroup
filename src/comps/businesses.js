@@ -11,7 +11,7 @@ const Businesses = () => {
             <div className=" w-full flex flex-col lg:flex-row justify-around">
                 <div className=" lg:w-[60%] space-y-3 md:space-y-0">
                     <p className=" font-Mulish text-2xl md:text-[32px] font-semibold">Our Businesses</p>
-                    <p className=" font-Mulish text-lg font-normal">Our diversified portfolio of businesses allows us to leverage our strengths in different sectors and mitigate risks. Our company is committed to providing high-quality products and services to our customers and we constantly expanding our operations.</p>
+                    <p className=" font-Mulish mt-3 lg:mt-0 text-lg font-normal">Our diversified portfolio of businesses allows us to leverage our strengths in different sectors and mitigate risks. Our company is committed to providing high-quality products and services to our customers and we constantly expanding our operations.</p>
                 </div>
                 <div className="w-full lg:w-[350px]">
                     <div className=" w-full h-[350px] mt-4 md:mt-0 md:h-[380px] rounded-[20px] bizone bg-cover"></div>
